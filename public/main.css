@@ -37,7 +37,7 @@ nav ul li a:hover  {
     color: #4d5791;
 }
 
-div.hero {
+header.hero {
     height: 350px;
     background-color: #b4c6f0;
     background-image: url('bg.png');
@@ -47,30 +47,36 @@ div.hero {
     padding-top: 40px;
 }
 
-div.hero h1,
-div.hero h2 {
+header.hero h1,
+header.hero h2 {
     text-align: center;
     margin: 0;
 }
 
 /* <!-- This is an A11y Change --> 
-changed header to black to increase contrast */
-div.hero h1 {
+changed header to black to increase contrast (suggested by WAVE)*/
+header.hero h1 {
     color: #000;
     font-size: 4.2em;
     margin-bottom: 20px;
 }
 
 /* <!-- This is an A11y Change --> 
-changed subheader to dark grey to increase contrast */
-div.hero h2 {
+changed subheader to dark grey to increase contrast (suggested by WAVE)*/
+header.hero h2 {
     color: #222222;
 }
 
 /* <!-- This is an A11y Change --> 
-increased font size of paragraph text */
+increased font size of paragraph text (suggested by WAVE)*/
 div.page-area p {
     font-size: 2em;
+}
+
+/* <!-- This is an A11y Change --> 
+increased font size of subheader text (suggested by WAVE)*/
+div.page-area h2 {
+    font-size: 3em;
 }
 
 main {
