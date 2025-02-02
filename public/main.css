@@ -67,6 +67,12 @@ div.hero h2 {
     color: #222222;
 }
 
+/* <!-- This is an A11y Change --> 
+increased font size of paragraph text */
+div.page-area p {
+    font-size: 2em;
+}
+
 main {
     padding: 40px;
     width: 100%;
