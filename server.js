@@ -1,4 +1,3 @@
-// Budget API
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
@@ -14,6 +13,9 @@ app.get('/hello', (req, res) => {
     res.send('Hello World!')
 });
 
+
+//LAUREN SIMINEAU 
+// code for pulling budget data from budget-data.json
 app.get('/budget', (req, res) => {
     const filePath = path.join(__dirname, 'budget-data.json');
     fs.readFile(filePath, 'utf8', (err, data) => {
