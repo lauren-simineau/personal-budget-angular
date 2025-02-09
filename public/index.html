@@ -98,7 +98,7 @@
 
 
     <script>
-        var dataSource = {
+        let dataSource = {
                 datasets: [
                     {
                         data: [],
@@ -107,6 +107,9 @@
                             '#ff6384',
                             '#36a2eb',
                             '#fd6b19',
+                            '#175e1a',
+                            '#5e175a',
+                            '#e238bb'
                         ]
                     }
                 ],
@@ -125,13 +128,12 @@
         function getBudget() {
             axios.get('http://localhost:3000/budget')
             .then(function (res) {
-                console.log(res);
-                for (var i = 0; i < res.data.myBudget.length; i++) {
+                for (let i = 0; i < res.data.myBudget.length; i++) {
                     dataSource.datasets[0].data[i] = res.data.myBudget[i].budget;
                     dataSource.labels[i] = res.data.myBudget[i].title;
                 }
-                createChart();
-            });
+            createChart();
+            })
         }
 
         getBudget();
